@@ -1,0 +1,112 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+.menu-banner {
+    background: url('../Assets/Images/menu-hero-image.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    padding-top: 20rem;
+    padding-bottom: 17rem;
+    .heading {
+        span {
+            font-size: 2.5rem;
+            color: $dark-color;
+        }
+        h1 {
+            font-size: 4rem;
+            color: $deep-red;
+        }
+    }
+}
+
+.dishes {
+    margin-top: 3rem;
+    .box-container {
+        .box {
+            padding: 3rem 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            &.reverse {
+                flex-direction: row-reverse;
+            }
+            .image {
+                flex: 1 1 42rem;
+                img {
+                    width: 100%; height: 50rem;
+                    object-fit: cover;
+                    border-radius: .7rem;
+                    &:hover {
+                        transform: scale(.9);
+                    }
+                }
+            }
+            .description {
+                flex: 1 1 42rem;
+                text-align: center;
+                padding: 3rem;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                height: 50rem;
+                margin: 0 1rem;
+                &:hover {
+                    border: .1rem solid $gray;
+                    border-radius: .7rem;
+                    transform: scale(.9);
+                }
+                .dish-name {
+                    padding: 1rem 0;
+                    font-size: 2rem;
+                    letter-spacing: .5rem;
+                    color: $light-color;
+                    font-family: 'Merienda One', sans-serif;
+                }
+                span {
+                    color: $deep-red;
+                    font-size: 1.8rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                    padding: 1rem 0;
+                    letter-spacing: 1.8;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .menu-banner {
+        .heading {
+            span {
+                font-size: 1.8rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .dishes {
+        .box-container {
+            .box {
+                .description {
+                    padding: 3rem 1rem;
+                    .dish-name {
+                        font-size: 1.8rem;
+                    }
+                    span {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}

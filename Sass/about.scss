@@ -1,0 +1,155 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+.about {
+    background: url("../Assets/Images/about-image.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 0;
+    padding-top: 10rem;
+    padding-bottom: 17rem;
+    .heading {
+        span {
+            font-size: 2rem;
+        }
+        h1 {
+            font-size: 4rem;
+        }
+    }
+}
+
+.story {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        .image {
+            flex: 1 1 42rem;
+            img {
+                width: 100%; height: 80rem;
+                border-radius: .7rem;
+                object-fit: cover;
+            }
+        }
+        .content {
+            flex: 1 1 42rem;
+            text-align: center;
+            padding: 0 3rem;
+            h3 {
+                padding: 1rem 0;
+                color: $light-color;
+                font-size: 2.5rem;
+                font-family: 'Merienda One', sans-serif;
+                span {
+                    color: $deep-red;
+                    font-family: 'Merienda One', sans-serif;
+                }
+            }
+            p {
+                font-size: 1.8rem;
+                color: $gray;
+                line-height: 1.8;
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+.banner {
+    background: url("../Assets/Images/banner-image.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 15rem 0;
+    margin-top: 5rem;
+}
+
+.chefs {
+    .box-container {
+        margin-top: 4rem;
+        .box {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2rem 0;
+            &.reverse {
+                flex-direction: row-reverse;
+            }
+            .image {
+                flex: 1 1 30rem;
+                img {
+                    width: 80%; height: 100%;
+                    object-fit: cover;
+                    border-radius: .7rem;
+                    filter: grayscale(1);
+                    &:hover {
+                        filter: grayscale(0);
+                    }
+                }
+            }
+            .content {
+                flex: 1 1 30rem;
+                padding: 0 1rem;
+                text-align: center;
+                .name {
+                    color: $light-color;
+                    font-size: 1.8rem;
+                    font-family: 'Merienda One', sans-serif;
+                    padding: 1rem 0;
+                }
+                span {
+                    color: $gray;
+                    font-size: 1.8rem;
+                }
+                p {
+                    font-size: 1.8rem;
+                    color: $light-color;
+                    font-weight: bolder;
+                    line-height: 1.8;
+                    font-style: oblique;
+                    padding: 1rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .about {
+        .heading {
+            span {
+                font-size: 1.8rem;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+    .story {
+        .container {
+            .image img {
+                height: 80rem;
+            }
+            .content {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+    .chefs {
+        .box-container {
+            .box, .box.reverse {
+                flex-direction: column;
+                .image img {
+                    width: 100%;
+                }
+                .content {
+                    padding: 2rem 1rem;
+                }
+            }
+        }
+    }
+}

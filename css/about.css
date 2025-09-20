@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+.about {
+  background: url("../Assets/Images/about-image.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0;
+  padding-top: 10rem;
+  padding-bottom: 17rem;
+}
+
+.about .heading span {
+  font-size: 2rem;
+}
+
+.about .heading h1 {
+  font-size: 4rem;
+}
+
+.story .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.story .container .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.story .container .image img {
+  width: 100%;
+  height: 80rem;
+  border-radius: .7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.story .container .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.story .container .content h3 {
+  padding: 1rem 0;
+  color: #f2f2f2;
+  font-size: 2.5rem;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.story .container .content h3 span {
+  color: #850101;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.story .container .content p {
+  font-size: 1.8rem;
+  color: #666;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.banner {
+  background: url("../Assets/Images/banner-image.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 15rem 0;
+  margin-top: 5rem;
+}
+
+.chefs .box-container {
+  margin-top: 4rem;
+}
+
+.chefs .box-container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.chefs .box-container .box.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.chefs .box-container .box .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+}
+
+.chefs .box-container .box .image img {
+  width: 80%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .7rem;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.chefs .box-container .box .image img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.chefs .box-container .box .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30rem;
+          flex: 1 1 30rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.chefs .box-container .box .content .name {
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  font-family: 'Merienda One', sans-serif;
+  padding: 1rem 0;
+}
+
+.chefs .box-container .box .content span {
+  color: #666;
+  font-size: 1.8rem;
+}
+
+.chefs .box-container .box .content p {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+  font-weight: bolder;
+  line-height: 1.8;
+  font-style: oblique;
+  padding: 1rem 0;
+}
+
+@media (max-width: 750px) {
+  .about .heading span {
+    font-size: 1.8rem;
+  }
+  .about .heading h1 {
+    font-size: 3rem;
+  }
+  .story .container .image img {
+    height: 80rem;
+  }
+  .story .container .content {
+    padding: 2rem 1rem;
+  }
+  .chefs .box-container .box, .chefs .box-container .box.reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .chefs .box-container .box .image img, .chefs .box-container .box.reverse .image img {
+    width: 100%;
+  }
+  .chefs .box-container .box .content, .chefs .box-container .box.reverse .content {
+    padding: 2rem 1rem;
+  }
+}
+/*# sourceMappingURL=about.css.map */

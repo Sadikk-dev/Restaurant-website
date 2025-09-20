@@ -1,0 +1,81 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+
+.reservation-form {
+    margin-top: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    form {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 3rem;
+        border-radius: .7rem;
+        .title {
+            font-size: 2rem;
+            color: $light-color;
+            text-align: center;
+            padding: 1rem 0;
+            letter-spacing: .5rem;
+            span {
+                font-family: 'Merienda One', sans-serif;
+                color: $deep-red;
+                font-size: 2rem;
+            }
+        }
+        .box {
+            .input-box {
+                width: 40rem;
+                background: none;
+                border-bottom: .3rem solid $gray;
+                padding: 1.2rem 2rem;
+                margin: 3rem 1rem;
+                font-size: 1.8rem;
+                color: $light-color;
+                &:focus {
+                    border-color: $deep-red;
+                }
+                &::placeholder {
+                    color: $light-color;
+                }
+                &[type="email"] {
+                    text-transform: none;
+                }
+                &[type="email"]::placeholder {
+                    text-transform: capitalize;
+                }
+            }
+            select option {
+                color: $gray;
+            }
+            textarea {
+                width: 100%; height: 25rem;
+                resize: none;
+                background: none;
+                border-bottom: .1rem solid $gray;
+                padding: 1.2rem 2rem;
+                margin: 3rem 1rem;
+                font-size: 1.8rem;
+                color: $light-color;
+                &::placeholder {
+                    color: $light-color;
+                }
+                &:focus {
+                    border-color: $deep-red;
+                }
+            }
+        }
+        .button {
+            background: $deep-red;
+            color: $dark-color;
+            font-weight: bolder;
+            &:hover {
+                background: $dark-color;
+                color: $light-color;
+            }
+        }
+    }
+}

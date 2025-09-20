@@ -1,0 +1,237 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+.home {
+    margin-top: 17rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .image {
+        flex: 1 1 42rem;
+        width: 100%;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .content {
+        flex: 1 1 42rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        span {
+            color: $deep-red;
+            font-size: 3rem;
+            font-family: 'Merienda One', sans-serif;
+        }
+        h3 {
+            font-size: 5rem;
+            color: $light-color;
+            padding: 1rem 0;
+        }
+        .links {
+            padding: 1rem 0;
+            a {
+                font-size: 1.8rem;
+                color: $light-color;
+                margin-left: 1rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.philosohy {
+    background: #000;
+    .text {
+        width: 90rem;
+        margin: 5rem auto;
+        .graph {
+            color: $light-color;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 1.8;
+            padding: 1rem 0;
+        }
+    }
+}
+
+.chefs-hightlight {
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 1rem;
+        .box {
+            margin: 0 4rem;
+            img {
+                width: 100%; height: 60rem;
+                object-fit: cover;
+                border-radius: .7rem;
+                filter: grayscale(1);
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+            .info {
+                text-align: center;
+                padding: 1rem 0;
+                h3 {
+                    font-size: 1.8rem;
+                    color: $light-color;
+                }
+                span {
+                    color: $gray;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+.reservation {
+    background: url('../Assets/Images/resrvation-img.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+        color: $dark-color;
+        background: $deep-red;
+        font-weight: bolder;
+        &:hover {
+            color: $light-color;
+            background: none;
+        }
+    }
+}
+
+.gallery {
+    .gallerybox {
+        margin-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap: 1rem;
+        img {
+            padding: 1rem;
+            width: 100%; height: 30rem;
+            object-fit: cover;
+            overflow: hidden;
+            &:hover {
+                transform: scale(.9);
+            }
+        }
+    }
+}
+
+.reviews {
+    .review-slider {
+        margin-top: 5rem;
+        .swiper-wrapper {
+            .swiper-slide {
+                position: relative;
+                padding: 2rem;
+                border-radius: .7rem;
+                background: $deep-red;
+                .content {
+                    padding: 2rem;
+                    .fa-quote-right {
+                        position: absolute;
+                        bottom: 3rem;
+                        right: 3rem;
+                        font-size: 2.5rem;
+                        color: $gray;
+                    }
+                    p {
+                        font-size: 1.5rem;
+                        color: $light-color;
+                        line-height: 1.8;
+                    }
+                }
+                .image {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    h3 {
+                        font-size: 1.8rem;
+                        color: $light-color;
+                    }
+                    span {
+                        font-size: 1.5rem;
+                        color: $light-color;
+                        padding: .7rem 0;
+                    }
+                    img {
+                        height: 10rem;
+                        border: .5rem solid $light-color;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1700px) {
+    .home {
+        .content {
+            h3 {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .home {
+        .content {
+            h3 {
+                font-size: 2.5rem;
+            }
+        }
+    }
+    .philosohy {
+        .text {
+            .graph {
+                font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1450px) {
+    .philosohy {
+        .text {
+            width: 60rem;
+            .graph {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    .philosohy {
+        .text {
+            width: 40rem;
+            .graph {
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .chefs-hightlight {
+        .box-container {
+            .box {
+                margin: 0 1rem;
+            }
+        }
+    }
+}

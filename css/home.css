@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+.home {
+  margin-top: 17rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.home .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  width: 100%;
+}
+
+.home .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.home .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home .content span {
+  color: #850101;
+  font-size: 3rem;
+  font-family: 'Merienda One', sans-serif;
+}
+
+.home .content h3 {
+  font-size: 5rem;
+  color: #f2f2f2;
+  padding: 1rem 0;
+}
+
+.home .content .links {
+  padding: 1rem 0;
+}
+
+.home .content .links a {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+  margin-left: 1rem;
+}
+
+.home .content .links a:hover {
+  text-decoration: underline;
+}
+
+.philosohy {
+  background: #000;
+}
+
+.philosohy .text {
+  width: 90rem;
+  margin: 5rem auto;
+}
+
+.philosohy .text .graph {
+  color: #f2f2f2;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
+.chefs-hightlight .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1rem;
+}
+
+.chefs-hightlight .box-container .box {
+  margin: 0 4rem;
+}
+
+.chefs-hightlight .box-container .box img {
+  width: 100%;
+  height: 60rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: .7rem;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+.chefs-hightlight .box-container .box img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.chefs-hightlight .box-container .box .info {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.chefs-hightlight .box-container .box .info h3 {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+}
+
+.chefs-hightlight .box-container .box .info span {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.reservation {
+  background: url("../Assets/Images/resrvation-img.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reservation a {
+  color: #04090e;
+  background: #850101;
+  font-weight: bolder;
+}
+
+.reservation a:hover {
+  color: #f2f2f2;
+  background: none;
+}
+
+.gallery .gallerybox {
+  margin-top: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 1rem;
+}
+
+.gallery .gallerybox img {
+  padding: 1rem;
+  width: 100%;
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+
+.gallery .gallerybox img:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.reviews .review-slider {
+  margin-top: 5rem;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide {
+  position: relative;
+  padding: 2rem;
+  border-radius: .7rem;
+  background: #850101;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .content {
+  padding: 2rem;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .content .fa-quote-right {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 2.5rem;
+  color: #666;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .content p {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  line-height: 1.8;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .image h3 {
+  font-size: 1.8rem;
+  color: #f2f2f2;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .image span {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  padding: .7rem 0;
+}
+
+.reviews .review-slider .swiper-wrapper .swiper-slide .image img {
+  height: 10rem;
+  border: 0.5rem solid #f2f2f2;
+  border-radius: 50%;
+}
+
+@media (max-width: 1700px) {
+  .home .content h3 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1450px) {
+  .home .content h3 {
+    font-size: 2.5rem;
+  }
+  .philosohy .text .graph {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 1450px) {
+  .philosohy .text {
+    width: 60rem;
+  }
+  .philosohy .text .graph {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .philosohy .text {
+    width: 40rem;
+  }
+  .philosohy .text .graph {
+    font-size: 1.5rem;
+  }
+  .chefs-hightlight .box-container .box {
+    margin: 0 1rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */

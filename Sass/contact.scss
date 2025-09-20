@@ -1,0 +1,114 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+.contact-hero {
+    margin-top: 0;
+    padding-top: 20rem;
+    padding-bottom: 25rem;
+    background: url('../Assets/Images/contact-hero-image.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .heading {
+        span {
+            color: $light-color;
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+        h1 {
+            color: $deep-red;
+            font-weight: bolder;
+            font-size: 4rem;
+        }
+    }
+}
+
+.contact {
+    background: #000;
+    .flex {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        form {
+            flex: 1 1 80rem;
+            padding: 3rem;
+            .input-box {
+                width: 100%;
+                background: none;
+                border-bottom: .2rem solid $gray;
+                padding: 1.2rem 2rem;
+                margin: 1rem 0;
+                color: $light-color;
+                font-size: 1.8rem;
+                &[type="email"] {
+                    text-transform: none;
+                }
+                &[type="email"]::placeholder {
+                    text-transform: capitalize;
+                }
+                &:focus {
+                    border-color: $deep-red;
+                }
+            }
+            .button {
+                color: $dark-color;
+                background: $deep-red;
+                &:hover {
+                    background: $dark-color;
+                    color: $light-color;
+                }
+            }
+        }
+        .info {
+            flex: 1 1 20rem;
+            padding: 3rem;
+            h3 {
+                font-size: 1.8rem;
+                letter-spacing: .5rem;
+                text-transform: uppercase;
+                color: $light-color;
+                padding: 1rem 0;
+            }
+            p {
+                color: $gray;
+                font-size: 1.8rem;
+                line-height: 1.8;
+                padding: .5rem 0;
+            }
+            .social-links {
+                margin-top: 2rem;
+                a {
+                    font-size: 2rem;
+                    color: $light-color;
+                    padding: 0 1.5rem;
+                    &:hover {
+                        color: $deep-red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-area {
+    padding: 0;
+    .map {
+        width: 100%; height: 50rem;
+    }
+}
+
+@media (max-width: 750px) {
+    .contact-hero {
+        .heading {
+            span {
+                font-size: 2.5rem;
+            }
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+}

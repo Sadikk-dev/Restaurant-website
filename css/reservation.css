@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+.reservation-form {
+  margin-top: 15rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservation-form form {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  border-radius: .7rem;
+}
+
+.reservation-form form .title {
+  font-size: 2rem;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1rem 0;
+  letter-spacing: .5rem;
+}
+
+.reservation-form form .title span {
+  font-family: 'Merienda One', sans-serif;
+  color: #850101;
+  font-size: 2rem;
+}
+
+.reservation-form form .box .input-box {
+  width: 40rem;
+  background: none;
+  border-bottom: 0.3rem solid #666;
+  padding: 1.2rem 2rem;
+  margin: 3rem 1rem;
+  font-size: 1.8rem;
+  color: #f2f2f2;
+}
+
+.reservation-form form .box .input-box:focus {
+  border-color: #850101;
+}
+
+.reservation-form form .box .input-box::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box .input-box:-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box .input-box::-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box .input-box::placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box .input-box[type="email"] {
+  text-transform: none;
+}
+
+.reservation-form form .box .input-box[type="email"]::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.reservation-form form .box .input-box[type="email"]:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.reservation-form form .box .input-box[type="email"]::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.reservation-form form .box .input-box[type="email"]::placeholder {
+  text-transform: capitalize;
+}
+
+.reservation-form form .box select option {
+  color: #666;
+}
+
+.reservation-form form .box textarea {
+  width: 100%;
+  height: 25rem;
+  resize: none;
+  background: none;
+  border-bottom: 0.1rem solid #666;
+  padding: 1.2rem 2rem;
+  margin: 3rem 1rem;
+  font-size: 1.8rem;
+  color: #f2f2f2;
+}
+
+.reservation-form form .box textarea::-webkit-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box textarea:-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box textarea::-ms-input-placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box textarea::placeholder {
+  color: #f2f2f2;
+}
+
+.reservation-form form .box textarea:focus {
+  border-color: #850101;
+}
+
+.reservation-form form .button {
+  background: #850101;
+  color: #04090e;
+  font-weight: bolder;
+}
+
+.reservation-form form .button:hover {
+  background: #04090e;
+  color: #f2f2f2;
+}
+/*# sourceMappingURL=reservation.css.map */

@@ -1,0 +1,81 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+.header {
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    &.active {
+        background: $dark-color;
+    }
+    .logo {
+        color: $light-color;
+        font-size: 2.5rem;
+        font-family: 'Merienda One';
+        span {
+            text-transform: none;
+            color: $deep-red;
+            font-family: 'Merienda One', sans-serif;
+        }
+    }
+    .fa-bars {
+        font-size: 2rem;
+        color: $light-color;
+        display: inline-block;
+        cursor: pointer;
+        display: none;
+        &:hover {
+            color: $deep-red;
+        }
+    }
+    .navbar {
+        a {
+            color: $light-color;
+            font-size: 1.8rem;
+            letter-spacing: .3rem;
+            margin: 0 1.5rem;
+            &:hover {
+                color: $deep-red;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1700px) {
+    .header {
+        padding: 2rem 5%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        background: $dark-color;
+        .fa-bars {
+            display: inline-block;
+        }
+        .navbar {
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            margin-top: 15rem;
+            z-index: 1000;
+            background: $dark-color;
+            height: 100vh;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            &.show-navbar {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            a {
+                display: block;
+                text-align: center;
+                padding: 1.5rem 0;
+            }
+        }
+    }
+}

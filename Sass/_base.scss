@@ -1,0 +1,81 @@
+@import '_variables';
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    font-size: 61%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+        width: .5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: $deep-red;
+        border-radius: 1rem;
+    }
+    &::-webkit-scrollbar-track {
+        background: $light-color;
+    }
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    margin-top: 3rem;
+    text-align: center;
+    span {
+        font-size: 1.8rem;
+        color: $deep-red;
+        font-family: 'Merienda One', sans-serif;
+    }
+    h1 {
+        font-size: 2.5rem;
+        color: $light-color;
+        text-transform: uppercase;
+        letter-spacing: .8rem;
+    }
+}
+
+.button {
+    display: inline-block;
+    margin-top: 3rem;
+    border: .1rem solid $light-color;
+    border-radius: .7rem;
+    padding: 1.2rem 2rem;
+    color: $light-color;
+    font-size: 1.8rem;
+    text-align: center;
+    letter-spacing: .3rem;
+    cursor: pointer;
+    &:hover {
+        background: $deep-red;
+        color: $dark-color;
+    }
+}
+
+body {
+    background: $dark-color;
+    &.reservation-page {
+        background: url("../Assets/Images/reservation-page-bg.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        .header {
+            background: $dark-color;
+        }
+    }
+}
+
+@media (max-width: 750px) {
+    html {
+        font-size: 50%;
+    }
+}
